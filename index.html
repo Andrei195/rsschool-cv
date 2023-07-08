@@ -12,17 +12,30 @@
     <link href="styles/style.css" rel="stylesheet">
 </head>
 <body>
+    <header class="header">
+        <div class="header-wrapper">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"> <a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"> <a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"> <a href="#code" class="nav-link">Code</a></li>
+                    <li class="nav-item"> <a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"> <a href="#languages" class="nav-link">Languages</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <div class="wrapper">
       <main>
         <div class="main-discription">
-          <h2 class="job-title">Front-End Developer</h2>
+          <h2 class="job-title">Junior Front-End Developer</h2>
           <h1>Andrei Ahiyevich</h1></br>
           <p class="discription">
             I am 32 years old and work as a service engineer. I want to gain knowledge and skills in the field of front-end development, which will be enough for a job in a company.
           </p>
         </div>
         <div class="projects">
-          <h2 class="header-primary">Projects</h2>
+          <h2 class="header-primary" id="projects">Projects</h2>
           <ol class="list-primary">
             <li>
               <a class="list-primary-item" href="https://barbershop-pl.goit.global/"
@@ -42,48 +55,47 @@
           </ol>
         </div>
         <div>
+            <div class="projects">
+                <h2 class="header-primary" id="code">Code</h2>
+                <pre class="pre"><code>function factorial(n) {
+                    if(n &lt; 0) return null;
+                    if (n &lt;= 1) return 1;
+                    return n * factorial(n-1);
+                  }</code></pre>
+            </div>
           <h2 class="header-primary">Work Experience</h2>
-          <h3 class="job-name">Front-End Developer <span class="highlight">Freelance</span></h3>
-          <p class="job-date">September 2019 - up to now | Country</p>
+          <h3 class="job-name">Handyman <span class="highlight">Various works</span></h3>
+          <p class="job-date">October 2018 - up to now | Poland</p>
           <ul class="job-list">
-            <li>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li>Risus commodo viverra maecenas.</li>
-            <li>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod.
-            </li>
+            <li>Maintenance of equipment. Builder.</li>
+            <li>Cargo transportation. Driver.</li>
+            <li>Working with explosive materials.</li>
+            <li>Installation of doors and windows.</li>
           </ul>
         </div>
         <div>
-                  <h3 class="job-name">Manager <span class="highlight">Glory New</span></h3>
-          <p class="job-date">March 2015 - October 2018   |   Country</p>
+         <h3 class="job-name">Engineer <span class="highlight">Drilling company</span></h3>
+          <p class="job-date">July 2010 - October 2018   |   Belarus</p>
           <ul class="job-list">
-            <li>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            </li>
-            <li>Quis ipsum suspendisse ultrices gravida.</li>
-            <li>Risus commodo viverra maecenas.</li>
-                    </ul>
+            <li>Maintenance of drilling rigs and equipment.</li>
+            <li>Maintenance of technical documentation.</li>
+            <li>Purchase of spare parts.</li>
+            </ul>
         </div>
         <div>
-          <h2 class="header-education">Education</h2>
-          <h3 class="university-name">National University</h3>
-          <h4 class="education-name">Management</h4>
-  <p class="education-date">September 2009 - June 2014   |   Country</p>
-  
-  </div>
+          <h2 class="header-education" id="education">Education</h2>
+          <h3 class="university-name">Gomel State Technical University named after P. O. Sukhoi</h3>
+          <h4 class="education-name">Hydropneumatic systems of mobile and technological machines and equipment</h4>
+  <p class="education-date">June 2010 - June 2016   |   Belarus</p>
+    </div>
       </main>
     <aside>
       <img class="CV-photo" src="assets\img\IMG_0069-50.jpg" width="370" alt="Foto Andrei Ahiyevich" />
       <div class="contact-block">
         <h2 class="header-secondary">Contacts</h2>
-        <p class="contacts-links">
-            <span class="bold"> C: </span> <a class="contacts-links" href="tel:+7 777 777 77 77">+48 577 417 462</a> </br>
-            <span class="bold"> E: </span> <a class="contacts-links" href="mailto:johndoe@gmail.com">agievich195@gmail.com</a>
+        <p class="contacts-links" id="contacts">
+            <span class="bold"> Phone: </span> <a class="contacts-links" href="tel:+7 777 777 77 77">+48 577 417 462</a> </br>
+            <span class="bold"> Email: </span> <a class="contacts-links" href="mailto:johndoe@gmail.com">agievich195@gmail.com</a>
         </p>
       </div>
       <div class="tech-skills-block">
@@ -107,11 +119,20 @@
           <li><span class="list-secondary-item">Teamwork </span> </li>
             </ul>                
       </div>  
+      <div class="languages-skills-block">
+        <h2 class="header-secondary" id="languages">Languages</h2>
+            <ul class="list-secondary">
+          <li><span class="list-secondary-item">Russian (Advanced )</span></li>
+          <li><span class="list-secondary-item">Belarusian (Advanced )</span></li>
+          <li><span class="list-secondary-item">Polish (Intermediate)</span></li>
+          <li><span class="list-secondary-item">English (Elementary)</span> </li>
+            </ul>                
+      </div> 
     </aside>
     </div>
     <footer>
-        <div class="footer-wrapper">
-        <div><a href="https://rs.school/"><img src="assets\img\rs_school_js.svg" width="100" 
+        <div class="footer">
+        <div class="footer-wrapper"><a href="https://rs.school/"><img src="assets\img\rs_school_js.svg" width="100" 
                 height="100" alt="RSSHOOL"></a></div>
             <div>&copy; 2023  <a class="developer-link" href="https://github.com/Andrei195">Andrei Ahiyevich</a></div>
         </div>

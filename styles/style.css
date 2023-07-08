@@ -2,6 +2,50 @@ body {
   font-family: "Montserrat", sans-serif;
   background: #d2d8e0;
 }
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 1200px;
+  justify-content: right;
+  margin: 0 auto;
+  background: #bdd689;
+  box-shadow: 6px 6px 20px 0px #0000001a;
+}
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-link {
+  position: relative;
+  padding: 0 12px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 50px;
+  color: #000000;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  bottom: -5px;
+  width: calc(100% - 24px);
+  height: 2px;
+  background-color: #000000;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.nav-link:hover::after {
+  opacity: 1;
+  animation-name: slidein;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
 .wrapper {
   display: flex;
   flex-direction: row-reverse;
@@ -56,6 +100,10 @@ aside {
   margin-top: 44px;
   margin-left: 40px;
 }
+.languages-skills-block {
+  margin-top: 44px;
+  margin-left: 40px;
+}
 main {
   padding: 102px 88px 102px 88px;
 }
@@ -104,6 +152,13 @@ h1 {
   line-height: 27px;
   margin-bottom: 12px;
 }
+.pre {
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+  padding-left: 0;
+  list-style-position: inside;
+}
 .job-name {
   font-weight: 700;
   font-size: 16px;
@@ -151,14 +206,17 @@ h1 {
   margin-bottom: 12px;
   margin-top: 11px;
 }
-.footer-wrapper {
+.footer {
   display: flex;
   flex-direction: row-reverse;
   width: 1200px;
   height: 100px;
   margin: 0 auto;
-  background: #d4a43c;
+  background: #bdd689;
   box-shadow: 6px 6px 20px 0px #0000001a;
+}
+.footer-wrapper {
+  justify-content: right;
 }
 .developer-link {
   justify-content: left;
